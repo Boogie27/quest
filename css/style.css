@@ -1,0 +1,149 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: compact;
+}
+
+html{
+    color: #333;
+}
+a,button,i{
+    cursor: pointer;
+}
+
+/* ==================================== */
+/*        NAVIAGTION SECTION           */
+/* ================================== */
+.navigation{
+    background-color: rgb(2, 179, 228);
+    padding: 10px;
+}
+.navigation .row{
+    margin: 0px;
+}
+.logo h3{
+    color: #fff;
+}
+/*-----------search bar ----------- */
+#mobileSearchBar{
+    display: none;
+}
+#desktopSearchBar .search-bar input{
+    width: 80%;
+    float: left;
+}
+#desktopSearchBar .search-bar button{
+    float: left;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    color: #fff;
+}
+#desktopSearchBar .search-bar button:focus, .search-bar button:hover{
+    color: #fff;
+}
+/*-----------profile bar ----------- */
+.profile-bar{
+   
+}
+.profile-bar i.fa{
+    color: #fff;
+    margin: 0px 5px;
+    position: relative;
+    
+}
+.profile-bar i.fa-bars{
+    margin-left: 50px;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 100%;
+    border-radius: 3px;
+}
+.profile-bar i.fa span{
+    top: -5px;
+    right: -7px;
+    font-size: 60%;
+    position: absolute;
+}
+img.profile-image{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.profile-bar i.fa-bars{
+    display: none;
+}
+.profile-bar i.fa-search{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .expand{
+        padding: 0px;
+    }
+    .profile-bar i.fa-bars{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .profile-bar i.fa-search{
+        display: inline-block;
+    }
+    #desktopSearchBar{
+        display: none;
+    }
+    #mobileSearchBar{
+        display: block;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    #mobileSearchBar .row{
+        padding: 0px;
+    }
+    #mobileSearchBar .search-bar{
+        width: 100%;
+        height: 40px;
+    }
+    #mobileSearchBar input, #mobileSearchBar button{
+        color: #333;
+        border: 1px solid rgb(2, 179, 228);
+    }
+    #mobileSearchBar input:focus, #mobileSearchBar button:focus{
+       box-shadow: none;
+    }
+    #mobileSearchBar input{
+        width: 100%;
+    }
+    #mobileSearchBar button{
+        width: 100px;
+        float: right;
+        margin: 5px 0px;
+        font-weight: 600;
+        /* background-color: rgb(21, 196, 245);;
+        color: #fff; */
+    }
+    #mobileSearchBar button:hover{
+       background-color: rgb(2, 179, 228);;
+       color: #fff;
+    }
+}
+@media only screen and (max-width: 398px){
+    .profile-bar i.fa-bars{
+        margin-left: 20px;
+    }
+    .navigation .col-3{
+        min-width: 100%;
+        text-align: center;
+    }
+    .navigation .col-9{
+        min-width: 100%;
+         padding: 0px;
+    }
+    .profile-bar{
+        overflow: hidden;
+    }
+    .profile-bar i.fa-home{
+        margin-left: 0px;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+   }
+}
