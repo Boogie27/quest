@@ -48,6 +48,7 @@ a,button,i{
 .profile-bar i.fa{
     color: #fff;
     margin: 0px 5px;
+    font-size: 130%;
     position: relative;
     
 }
@@ -59,7 +60,7 @@ a,button,i{
     border-radius: 3px;
 }
 .profile-bar i.fa span{
-    top: -5px;
+    top: -10px;
     right: -7px;
     font-size: 60%;
     position: absolute;
