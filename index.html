@@ -19,10 +19,10 @@
     <section>
         <div class="navigation">
             <div class="row">
-                <div class="col-lg-3 col-md-2 col-sm-3 col-3 expand">
+                <div class="col-lg-3 col-md-2 col-sm-12 col-3 expand">
                      <!-- logo start -->
                     <div class="logo">
-                           <h3>Quest</h3>
+                        <h3><a href="index.html">Quest</a>   <i class="fa fa-bars"></i></h3>
                     </div>
                      <!-- logo end -->
                 </div>
@@ -39,12 +39,11 @@
                 <div class="col-lg-3 col-md-3 col-sm-9 col-9 expand">
                     <!-- profile bar start -->
                     <div class="profile-bar text-right">
-                        <i class="fa fa-home"></i>
-                        <i class="fa fa-search"></i>
+                        <a href="index.html"><i class="fa fa-home"></i></a>
+                        <i class="fa fa-search" id="searchBoxOpenBtn"></i>
                         <i class="fa fa-envelope"><span class="badge bg-danger">3</span></i>
                         <i class="fa fa-bell"><span class="badge bg-danger">3</span></i>
                         <img src="image/profile-image/profile-image.jpg" class="profile-image" alt="profile-image">
-                        <i class="fa fa-bars"></i>
                     </div>
                       <!-- profile bar end -->
                 </div>
@@ -60,6 +59,287 @@
                     </form>
                 </div>
            </div>
+        </div>
+         <!-- mobile search bar end-->
+    </section>
+
+
+ 
+     <!-- sub navigation -->
+    <section>
+            <div class="container">
+                 <div class="sub-navigation">
+                     <div class="sub-nav-frame">
+                        <div class="sub-nav-item">
+                            <i class="fa fa-edit"></i><span>News</span>
+                        </div>
+                        <div class="sub-nav-item">
+                            <i class="fa fa-file"></i><span>Answers</span>
+                        </div>
+                        <div class="sub-nav-item">
+                            <i class="fa fa-edit"></i><span>Answer a Question</span>
+                        </div>
+                        <div class="sub-nav-item">
+                            <a href="#" class="question"><i class="fa fa-question"></i><span>Add Question</span></a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+    </section>
+
+
+    <!-- side navigation  -->
+    <section class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2" id="leftSideBar">
+                    <!-- side navigation start -->
+                    <div class="left-side-bar">
+                        <ul class="left-bar">
+                            <li>
+                                <a href="#" class="active"><img src="image/profile-image/profile-image.jpg" alt=""><span>Feeds</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Foods</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Entertainment</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>News</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Fashion</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Health</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Coronasvirus</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Music</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Coronasvirus</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""><span>Music</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- side navigation end -->
+                </div>
+                <div class="col-lg-7" id="middleSideBar">
+                    <div class="middle-bar">
+                        <!-- user question field start -->
+                        <div class="user-question-field">
+                            <form action="" method="POST">
+                                <div class="form-group">
+                                    <label for="name"><img src="image/profile-image/profile-image.jpg" alt="">Johny Cage</label>
+                                    <textarea name="post" id="" cols="30" rows="10" placeholder="Whats on your mind?"></textarea>
+                                    <button type="" class="postBtn">Post</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- user question field end -->
+
+                        <!-- answers start -->
+                        <div class="answer-container">
+                            <div class="answers">
+                               <div class="answer-header"><h3>Answer posted for you</h3></div>
+                               <div class="row">
+                                   <div class="col-lg-1">
+                                       <div class="answer-image">
+                                           <a href="#"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-10">
+                                       <ul class="answer-info">
+                                           <li><a href="#"><h3>Alfred Fenanda</h3></a><span>Web developer</span></li>
+                                       </ul>
+                                   </div>
+                                   <div class="col-lg-12">
+                                       <div class="answer-result">
+                                           <div class="answer-result-header"><h3>What is the brutal truth about Developers</h3></div>
+                                           <p class="answer-decription">
+                                                Simply put, a camera is a device for recording visual images in the form of photographs, or video signals using either film or digital memory.
+                                                It is a device that consists of a lightproof chamber with an aperture fitted with a lens and a shutter through which the image of an object is
+                                                projected onto a surface for recording (as on film) or for translation into electrical impulses (as for television broadcast).
+                                                The word camera is short for camera obscura, which in Latin means “dark room.” A camera obscura is a darkened enclosure which 
+                                                can be as small as a box or as large as a room into which light is admitted through a very small hole. Because of the way in which 
+                                                light beams cross rather than scatter, an upside-down image of whatever is outside the enclosure is projected on the surface opposite 
+                                                the hole. The image can be made brighter by passing the light through a lens.
+                                                The first photographic camera was simply a camera obscura with the image projected on light-sensitive chemicals.
+                                           </p>
+                                           <div class="answer-description-image">
+                                            <img src="image/answer-image/1.png" alt="">
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                         <!-- answers end -->
+
+                    </div>
+                </div>
+                <div class="col-lg-3" id="rightSideBar">
+                    <div class="right-side-bar"> 
+                        <div class="right-side-header"><h3>Related Topics</h3></div>
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                        <!-- right side info start -->
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="col-lg-3 right-image">
+                                   <a href="#" class="right-side-image"><img src="image/profile-image/profile-image.jpg" alt=""></a>
+                                </div>
+                                <div class="col-lg-9 right-info">
+                                   <ul>
+                                       <li><a href="#">Science of life</a></li>
+                                       <li class="followers"> 10k followers</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- right side info end -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
