@@ -24,7 +24,7 @@ ul{
 /* ================================== */
 .navigation{
     /* background-color: rgb(2, 179, 228); */
-    background-color: rgb(117, 0, 117);
+    background-color: rgb(80, 1, 80);
     padding: 10px 10px 8px 10px;
 }
 .navigation .row{
@@ -53,29 +53,31 @@ ul{
     }
     .navigation .expand{
         min-width: 100%;
+        padding: 0px;
     }
     .logo{
         padding: 0px;
     }
+    
     .logo h3{
         text-align: center;
-        padding: 12px 0px;
-        background-color: rgb(117, 0, 117);
+        padding: 20px 0px;
+        background-color:  rgb(102, 1, 102);
     }
     .logo h3 i.fa-bars{
         display: block;
-        top: 15px;
+        top: 22px;
         right: 12px;
     }
 }
-/*-----------search bar ----------- */
+/*-----------desktop search bar and mobile search bar ----------- */
 #mobileSearchBar{
     display: none;
 }
 #desktopSearchBar .search-bar input{
     width: 80%;
     float: left;
-    background-color: rgb(90, 0, 90);
+    background-color: rgb(102, 1, 102);
     border: none;
     color: #fff;
 }
@@ -92,7 +94,7 @@ ul{
 #desktopSearchBar .search-bar button:focus, .search-bar button:hover{
     color: #fff;
 }
-@media only screen and (max-width: 857px){
+@media only screen and (max-width: 867px){
     #desktopSearchBar{
         display: none;
     }
@@ -100,6 +102,42 @@ ul{
         display: none;
         margin-top: 10px;
         overflow: hidden;
+    }
+
+    #desktopSearchBar{
+        display: none;
+    }
+    #mobileSearchBar{
+        display: block;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    #mobileSearchBar .row{
+        padding: 0px;
+    }
+    #mobileSearchBar .search-bar{
+        text-align: center;
+    }
+    #mobileSearchBar input, #mobileSearchBar button{
+        color: #333;
+        display: inline-block;
+        border: 1px solid rgb(80, 1, 80);
+    }
+    #mobileSearchBar input:focus, #mobileSearchBar button:focus{
+       box-shadow: none;
+       outline: none;    }
+    #mobileSearchBar input{
+        width: 60%;
+        padding: 5px 5px;
+        border-radius: 3px;
+    }
+    #mobileSearchBar input::placeholder{
+        color: #333;
+    }
+    #mobileSearchBar button{
+        margin: 5px 0px;
+        font-weight: 600;
+        color: #333;
     }
 }
 /*-----------profile bar ----------- */
@@ -138,16 +176,7 @@ img.profile-image{
     height: 40px;
     border-radius: 50%;
 }
-@media only screen and (max-width: 867px){
-    .expand{
-        padding: 0px;
-    }
-    .logo h3{
-        padding: 20px 0px;
-    }
-    .logo h3 i.fa-bars{
-       top: 22px;
-    }
+@media only screen and (max-width: 867px){  
     ul.profile-bar{
        background-color: #fff;
        padding: 2px 0px;
@@ -165,42 +194,7 @@ img.profile-image{
     ul.profile-bar li i{
         color: #555;
     }
-    #desktopSearchBar{
-        display: none;
-    }
-    #mobileSearchBar{
-        display: block;
-        margin-top: 10px;
-        overflow: hidden;
-    }
-    #mobileSearchBar .row{
-        padding: 0px;
-    }
-    #mobileSearchBar .search-bar{
-        text-align: center;
-    }
-    #mobileSearchBar input, #mobileSearchBar button{
-        color: #333;
-        display: inline-block;
-        border: 1px solid rgb(158, 3, 158);
-    }
-    #mobileSearchBar input:focus, #mobileSearchBar button:focus{
-       box-shadow: none;
-       outline: none;    }
-    #mobileSearchBar input{
-        width: 60%;
-        padding: 5px 5px;
-        border-radius: 3px;
-    }
-    #mobileSearchBar input::placeholder{
-        color: #333;
-    }
-    #mobileSearchBar button{
-        margin: 5px 0px;
-        font-weight: 600;
-        background-color:rgb(158, 3, 158);
-        color: #fff;
-    }
+ 
 }
 
 /* ===================================== */
@@ -227,7 +221,7 @@ img.profile-image{
     color: rgb(102, 102, 102);
 }
 .sub-nav-item a.question{
-   background-color: rgb(158, 3, 158);
+   background-color: rgb(80, 1, 80);
    padding: 7px 10px;
    color: #fff;
    text-decoration: none;
@@ -383,6 +377,7 @@ a.right-side-image img{
 .user-question-field label{
     color: #333;
     padding: 0px 5px;
+    font-weight: 600;
 }
 .user-question-field textarea{
     width: 100%;
@@ -403,7 +398,7 @@ a.right-side-image img{
     color: #fff;
     border-radius: 3;
     padding: 6px;
-    background-color: rgb(158, 3, 158);
+    background-color: rgb(80, 1, 80);
 }
 .user-question-field button:focus, .user-question-field textarea:focus{
     outline: none;
@@ -569,7 +564,7 @@ p.answer-decription{
     border: none;
     float: right;
     padding: 7px 10px;
-    background-color: rgb(158, 3, 158);
+    background-color: rgb(80, 1, 80);
 }
 @media only screen and (max-width: 567px){
     .client-comment{
