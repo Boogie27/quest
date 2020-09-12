@@ -23,7 +23,8 @@ ul{
 /*        NAVIAGTION SECTION           */
 /* ================================== */
 .navigation{
-    background-color: rgb(2, 179, 228);
+    /* background-color: rgb(2, 179, 228); */
+    background-color: rgb(117, 0, 117);
     padding: 10px 10px 8px 10px;
 }
 .navigation .row{
@@ -46,17 +47,25 @@ ul{
     margin: 0px 0px 0px 30px;
 }
 @media only screen and (max-width: 867px){
+    .navigation{
+        background-color: #fff;
+        padding: 0px;
+    }
     .navigation .expand{
         min-width: 100%;
     }
     .logo{
-        padding: 25px 0px;
+        padding: 0px;
     }
     .logo h3{
         text-align: center;
+        padding: 12px 0px;
+        background-color: rgb(117, 0, 117);
     }
     .logo h3 i.fa-bars{
         display: block;
+        top: 15px;
+        right: 12px;
     }
 }
 /*-----------search bar ----------- */
@@ -66,6 +75,13 @@ ul{
 #desktopSearchBar .search-bar input{
     width: 80%;
     float: left;
+    background-color: rgb(90, 0, 90);
+    border: none;
+    color: #fff;
+}
+#desktopSearchBar .search-bar input:focus, #desktopSearchBar .search-bar input::placeholder{
+   box-shadow: none;
+   color: #fff;
 }
 #desktopSearchBar .search-bar button{
     float: left;
@@ -87,62 +103,73 @@ ul{
     }
 }
 /*-----------profile bar ----------- */
-.profile-bar{
-   
+ul.profile-bar{
+    width: 100%;
+    text-align: right;
 }
-.profile-bar i{
+ul.profile-bar i{
     color: #fff;
     margin: 0px 5px;
     font-size: 130%;
-    position: relative;
-    display: inline-block;
 }
-.profile-bar i.fa-bars{
-    margin-top: 5px;
-    margin-left: 50px;
-    border: 1px solid #fff;
-    padding: 10px;
-    font-size: 100%;
-    border-radius: 3px;
+ul.profile-bar li{
+   display: inline-block;
+   margin-left: 10px;
+   position: relative;
 }
-.profile-bar i span{
-    top: -7px;
-    right: -5px;
-    font-size: 40%;
-    z-index: 50;
+ul.profile-bar li.bell, ul.profile-bar li.envelope, ul.profile-bar li.hide{
+    top: 5px;
+ }
+ul.profile-bar li.hide{
+    display: none;
+ }
+ ul.profile-bar li i{
+     position: relative;
+ }
+ ul.profile-bar li i span{
     position: absolute;
-}
+    font-size: 45%;
+    color: #fff;
+    top: -8px;
+    right: -8px;
+ }
 img.profile-image{
     width: 40px;
     height: 40px;
-    margin-left: 20px;
     border-radius: 50%;
-}
-.profile-bar i.fa-bars, .profile-bar i.fa-home, .profile-bar i.fa-search{
-    display: none;
 }
 @media only screen and (max-width: 867px){
     .expand{
         padding: 0px;
     }
-    .profile-bar i.fa-search{
-        display: inline-block;
+    .logo h3{
+        padding: 20px 0px;
     }
-    .profile-bar i.fa-home{
-        margin-left: 0px;
-        display: inline-block;
-        position: absolute;
-        left: 0px;
-        top: 7px;
-   }
-    .profile-bar i.fa-bell, .profile-bar i.fa-envelope, .profile-bar i.fa-search, .profile-bar i.fa-home{
-        margin: 0px 30px;
+    .logo h3 i.fa-bars{
+       top: 22px;
+    }
+    ul.profile-bar{
+       background-color: #fff;
+       padding: 2px 0px;
+       text-align: center;
+       box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+     }
+    ul.profile-bar li.hide{
+       display: inline-block;
+    }
+    ul.profile-bar li{
+       width: 18%; 
+       margin: 0px;
+       text-align: center; 
+    }
+    ul.profile-bar li i{
+        color: #555;
     }
     #desktopSearchBar{
         display: none;
     }
     #mobileSearchBar{
-        display: none;
+        display: block;
         margin-top: 10px;
         overflow: hidden;
     }
@@ -150,46 +177,29 @@ img.profile-image{
         padding: 0px;
     }
     #mobileSearchBar .search-bar{
-        width: 100%;
-        height: 40px;
+        text-align: center;
     }
     #mobileSearchBar input, #mobileSearchBar button{
         color: #333;
-        border: 1px solid rgb(2, 179, 228);
+        display: inline-block;
+        border: 1px solid rgb(158, 3, 158);
     }
     #mobileSearchBar input:focus, #mobileSearchBar button:focus{
        box-shadow: none;
-    }
+       outline: none;    }
     #mobileSearchBar input{
-        width: 100%;
+        width: 60%;
+        padding: 5px 5px;
+        border-radius: 3px;
+    }
+    #mobileSearchBar input::placeholder{
+        color: #333;
     }
     #mobileSearchBar button{
-        width: 100px;
-        float: right;
         margin: 5px 0px;
         font-weight: 600;
-        background-color: rgb(2, 179, 228);
+        background-color:rgb(158, 3, 158);
         color: #fff;
-    }
-}
-@media only screen and (max-width: 567px){
-    .profile-bar i.fa-bell, .profile-bar i.fa-envelope, .profile-bar i.fa-search, .profile-bar i.fa-home{
-        margin: 0px 10px;
-    }
-}
-@media only screen and (max-width: 457px){
-    .navigation .col-9{
-        min-width: 100%;
-         padding: 0px;
-    }
-    .navigation .col-3{
-        min-width: 100%;
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 398px){
-    .profile-bar{
-        overflow: hidden;
     }
 }
 
@@ -217,9 +227,8 @@ img.profile-image{
     color: rgb(102, 102, 102);
 }
 .sub-nav-item a.question{
-   background-color: rgb(2, 179, 228);
+   background-color: rgb(158, 3, 158);
    padding: 7px 10px;
-   border-radius: 200px;
    color: #fff;
    text-decoration: none;
 }
@@ -262,7 +271,7 @@ img.profile-image{
     border: 1px solid #ccc;
 }
 ul.left-bar a.active{
-    color:rgb(2, 179, 228);
+    color:rgb(139, 4, 139);
 }
 ul.left-bar li{
     width: 100%;
@@ -372,7 +381,7 @@ a.right-side-image img{
     margin-right: 10px;
 }
 .user-question-field label{
-    color: #555;
+    color: #333;
     padding: 0px 5px;
 }
 .user-question-field textarea{
@@ -392,9 +401,9 @@ a.right-side-image img{
     float: right;
     border: none;
     color: #fff;
-    border-radius: 200px;
+    border-radius: 3;
     padding: 6px;
-    background-color: rgb(2, 179, 228);
+    background-color: rgb(158, 3, 158);
 }
 .user-question-field button:focus, .user-question-field textarea:focus{
     outline: none;
@@ -453,7 +462,7 @@ a.right-side-image img{
 }
 .answer-info span{
     font-size: 80%;
-    color: #ccc;
+    color: rgb(95, 95, 95);
 }
 .answer-result{
     padding: 20px 0px 0px 0px;
@@ -466,25 +475,27 @@ a.right-side-image img{
 }
 p.answer-decription{
     color: #333;
+    padding: 8px 0px;
+    border-bottom: 1px solid #ccc;
 }
 .answer-description-image{
     width: 100%;
     border-radius: 3px;
     text-align: center;
+    margin: 10px 0px;
     background-color: rgb(216, 216, 216);
     border: 1px solid #ccc;
 }
 .answer-action ul{
     overflow: hidden;
     position: relative;
-    margin-top: 5px;
 }
 .answer-action ul li{
     display: inline-block;
     margin: 0px 10px;
 }
 .answer-action ul li i{
-    color:rgb(2, 179, 228);
+    color:rgb(151, 2, 151);
     font-size: 110%;
 }
 .answer-action ul li.options{
@@ -511,6 +522,11 @@ p.answer-decription{
         border-radius: 0px;
         border-top: 1px solid rgb(219, 218, 218);
     }
+    p.answer-decription{
+       font-size: 110%;
+       font-weight: 300;
+       color: #333;
+    }
     p.answer-decription, .answer-result-header h3, .answer-image img, .answer-header h3{
         padding: 5px;
     }
@@ -520,10 +536,10 @@ p.answer-decription{
         padding-left: 20px;
     }
     .answer-action ul li{
-        margin: 0px 5px;
+        margin: 0px 15px;
     }
     .answer-action ul li.comment a{
-        font-size: 70%;
+        font-size: 90%;
     }
 }
 /* -------------- client comment------------ */
@@ -536,7 +552,7 @@ p.answer-decription{
     border-radius: 50%;
 }
 .client-image span{
-    color: #555;
+    color: #333;;
     font-weight: 600;
     font-size: 80%;
     margin: 0px 2px;
@@ -546,14 +562,14 @@ p.answer-decription{
 }
 .client-comment form textarea:focus{
     box-shadow: none;
+    border: 1px solid #ccc;
 }
 .client-comment form button{
     color: #fff;
     border: none;
     float: right;
     padding: 7px 10px;
-    border-radius: 200px;
-    background-color: rgb(2, 179, 228);
+    background-color: rgb(158, 3, 158);
 }
 @media only screen and (max-width: 567px){
     .client-comment{
