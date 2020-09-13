@@ -23,7 +23,6 @@ ul{
 /*        NAVIAGTION SECTION           */
 /* ================================== */
 .navigation{
-    /* background-color: rgb(2, 179, 228); */
     background-color: rgb(80, 1, 80);
     padding: 10px 10px 8px 10px;
 }
@@ -70,74 +69,46 @@ ul{
         right: 12px;
     }
 }
-/*-----------desktop search bar and mobile search bar ----------- */
-#mobileSearchBar{
-    display: none;
-}
+/*-----------desktop search bar ----------- */
 #desktopSearchBar .search-bar input{
-    width: 80%;
-    float: left;
+    width: 75%;
     background-color: rgb(102, 1, 102);
     border: none;
     color: #fff;
+    display: inline-block;
 }
 #desktopSearchBar .search-bar input:focus, #desktopSearchBar .search-bar input::placeholder{
    box-shadow: none;
    color: #fff;
 }
 #desktopSearchBar .search-bar button{
-    float: left;
-    border: 1px solid #fff;
     margin-left: 10px;
     color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
 }
 #desktopSearchBar .search-bar button:focus, .search-bar button:hover{
     color: #fff;
 }
 @media only screen and (max-width: 867px){
     #desktopSearchBar{
-        display: none;
-    }
-    #mobileSearchBar{
-        display: none;
-        margin-top: 10px;
-        overflow: hidden;
-    }
-
-    #desktopSearchBar{
-        display: none;
-    }
-    #mobileSearchBar{
-        display: block;
-        margin-top: 10px;
-        overflow: hidden;
-    }
-    #mobileSearchBar .row{
+        min-width: 100%;
         padding: 0px;
     }
-    #mobileSearchBar .search-bar{
+    #desktopSearchBar .search-bar{
         text-align: center;
+        padding: 12px 0px;
+        background-color: rgb(56, 0, 56);
     }
-    #mobileSearchBar input, #mobileSearchBar button{
-        color: #333;
-        display: inline-block;
-        border: 1px solid rgb(80, 1, 80);
+}
+@media only screen and (max-width: 398px){
+    #desktopSearchBar .search-bar input{
+        width: 70%;
+        font-size: 80%;
     }
-    #mobileSearchBar input:focus, #mobileSearchBar button:focus{
-       box-shadow: none;
-       outline: none;    }
-    #mobileSearchBar input{
-        width: 60%;
-        padding: 5px 5px;
-        border-radius: 3px;
-    }
-    #mobileSearchBar input::placeholder{
-        color: #333;
-    }
-    #mobileSearchBar button{
-        margin: 5px 0px;
-        font-weight: 600;
-        color: #333;
+    #desktopSearchBar .search-bar button{
+        font-size: 80%;
+        margin: 0px;
     }
 }
 /*-----------profile bar ----------- */
@@ -179,7 +150,7 @@ img.profile-image{
 @media only screen and (max-width: 867px){  
     ul.profile-bar{
        background-color: #fff;
-       padding: 2px 0px;
+       padding: 10px 0px;
        text-align: center;
        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
      }
@@ -235,6 +206,7 @@ img.profile-image{
         height: 50px;
         position: relative;
         overflow: hidden;
+        margin: 10px 0px;
     }
     .sub-nav-frame{
         width: 100%;
@@ -316,7 +288,7 @@ ul.left-bar li{
 .right-side-bar{
     background-color: #fff;
     border-radius: 4px;
-    padding: 10px 0px;
+    padding: 0px;
 }
 .right-side-header{
     padding: 10px;
@@ -368,10 +340,13 @@ a.right-side-image img{
 /* ===================================== */
 /*        MIDDEL BAR                    */
 /* =================================== */
+.user-question-field{
+    margin-bottom: 50px;
+}
 .user-question-field img{
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 .user-question-field label{
@@ -432,8 +407,9 @@ a.right-side-image img{
 }
 .answers{
     padding: 20px;
+    margin-bottom: 50px;
     border-radius: 5px;
-    margin-top: 50px;
+    background-color: #fff;
     border: 1px solid rgb(219, 218, 218);
 }
 .answer-header h3{
@@ -447,6 +423,9 @@ a.right-side-image img{
 }
 .answer-info{
     padding-left: 10px;
+}
+.answer-info li{
+    display: inline-block;
 }
 .answer-info h3, .answer-info a{
     color: #333;
@@ -471,6 +450,7 @@ a.right-side-image img{
 p.answer-decription{
     color: #333;
     padding: 8px 0px;
+    font-weight: 300;
     border-bottom: 1px solid #ccc;
 }
 .answer-description-image{
@@ -488,18 +468,15 @@ p.answer-decription{
 .answer-action ul li{
     display: inline-block;
     margin: 0px 10px;
+    color: rgb(80, 1, 80);
 }
 .answer-action ul li i{
-    color:rgb(151, 2, 151);
+    color:rgb(80, 1, 80);
     font-size: 110%;
 }
 .answer-action ul li.options{
     float: right;
     margin-top: 4px;
-}
-.answer-action ul li span{
-    color: rgb(112, 112, 112);
-    font-size: 70%;
 }
 .answer-action ul li.comment a{
     color: #333;
@@ -507,23 +484,44 @@ p.answer-decription{
     margin-right: 5px;
     text-decoration: none;
 }
+@media only screen and (max-width: 992px){
+    p.answer-decription{
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width: 767px){
+   .answer-container{
+       padding: 0px;
+       background-color: rgb(219, 218, 218);
+   }
+   .answers{
+       margin: 10px 0px 20px 0px;
+   }
+}
 @media only screen and (max-width: 567px){
     .answer-container{
         padding: 0px;
     }
     .answers{
         border: none;
-        padding: 10px 0px;
         border-radius: 0px;
+        padding: 10px 0px;
         border-top: 1px solid rgb(219, 218, 218);
     }
     p.answer-decription{
-       font-size: 110%;
+       font-size: 115%;
        font-weight: 300;
        color: #333;
     }
-    p.answer-decription, .answer-result-header h3, .answer-image img, .answer-header h3{
-        padding: 5px;
+    p.answer-decription, .answer-result-header h3, .answer-header h3{
+        padding: 10px;
+    }
+    .answer-image img, .answer-header h3{
+        margin-left: 10px;
+    }
+    .answer-info{
+        padding-left: 20px;
+        margin-left: 20px;
     }
     }
 @media only screen and (max-width: 457px){
@@ -542,8 +540,8 @@ p.answer-decription{
     margin-top: 10px;
 }
 .client-image img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 .client-image span{
@@ -566,8 +564,102 @@ p.answer-decription{
     padding: 7px 10px;
     background-color: rgb(80, 1, 80);
 }
+.client-comment form a.view-comment{
+    float: left;
+    margin-top: 9px;
+    color:  rgb(80, 1, 80);
+    padding: 7px 10px;
+    text-decoration: none;
+    border: 1px solid  rgb(80, 1, 80);;
+}
 @media only screen and (max-width: 567px){
     .client-comment{
         padding: 0px 5px;
+    }
+}
+/* ---------------user comment ----------------- */
+.user-comment-section{
+    margin-top: 80px;
+    padding: 0px 5px;
+}
+.user-comments{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.user-comments .user-comment-image{
+    float: left;
+    width: 50px;
+}
+.user-comments .user-comment-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-comments .user-comment-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-comments .user-comment-body{
+    float: left;
+    width: 90%;
+}
+.user-comments .user-comment-content{
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(234, 234, 234);
+}
+.user-comments .user-comment-content h3{
+    font-size: 110%;
+    font-weight: 600;
+    color: #333;
+}
+.user-comments .user-comment-content p{
+   margin: 0px;
+   font-size: 115%;
+}
+.user-like-btn{
+    margin: 5px 0px;
+}
+.user-like-btn ul{
+    width: 100%;
+    text-align: center;
+}
+.user-like-btn ul li{
+    width: 23%;
+    display: inline-block;
+    color:  #555;
+}
+.user-like-btn ul li button{
+    border: none;
+    background-color: #fff;
+    color:  #555;
+}
+.user-like-btn ul li a{
+    color:  #555;
+    text-decoration: none;
+}
+.user-like-btn ul li button:focus{
+    outline-color: rgb(80, 1, 80);
+}
+@media only screen and (max-width: 567px){
+    .user-comment-section{
+        padding: 0px 5px;
+    }
+    .user-comments .user-comment-body{
+        width: 85%;
+    }
+    .user-comments .user-comment-body p{
+        font-size: 115%;
+    }  
+}
+@media only screen and (max-width: 398px){
+    .user-comments .user-comment-body{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 350px){
+    .user-comments .user-comment-body{
+        width: 82%;
     }
 }
