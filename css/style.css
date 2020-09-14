@@ -451,6 +451,7 @@ p.answer-decription{
     color: #333;
     padding: 8px 0px;
     font-weight: 300;
+    font-size: 115%;
     border-bottom: 1px solid #ccc;
 }
 .answer-description-image{
@@ -460,6 +461,10 @@ p.answer-decription{
     margin: 10px 0px;
     background-color: rgb(216, 216, 216);
     border: 1px solid #ccc;
+}
+.answer-description-image img{
+    width: 100%;
+    height: 100%;
 }
 .answer-action ul{
     overflow: hidden;
@@ -580,86 +585,63 @@ p.answer-decription{
 /* ---------------user comment ----------------- */
 .user-comment-section{
     margin-top: 80px;
-    padding: 0px 5px;
 }
 .user-comments{
-    overflow: hidden;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #fff;
 }
-.user-comments .user-comment-image{
-    float: left;
-    width: 50px;
+.user-comment-image a{
+    text-decoration: none;
 }
-.user-comments .user-comment-image img{
+.user-comment-image img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.user-comments .user-comment-image img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.user-comments .user-comment-body{
-    float: left;
-    width: 90%;
-}
-.user-comments .user-comment-content{
-    padding: 5px;
-    border-radius: 7px;
-    background-color: rgb(234, 234, 234);
-}
-.user-comments .user-comment-content h3{
-    font-size: 110%;
-    font-weight: 600;
+.user-comment-image span{
     color: #333;
+    font-weight: 600;
+    font-size: 100%;
+    margin-left: 10px;
 }
-.user-comments .user-comment-content p{
-   margin: 0px;
-   font-size: 115%;
+.user-comment-image span.time{
+    font-weight: 300;
+    color: rgb(159, 159, 159);
 }
-.user-like-btn{
-    margin: 5px 0px;
+.user-comment-body p{
+    font-size: 115%;
+    color: #333;
+    font-weight: 300;
+    margin: 0px;
 }
 .user-like-btn ul{
     width: 100%;
-    text-align: center;
+    padding: 7px;
+    border-top: 1px solid #ccc;
 }
-.user-like-btn ul li{
-    width: 23%;
+.user-like-btn li{
+    width: 20%;
+    font-size: 90%;
+    color: rgb(159, 159, 159);
     display: inline-block;
-    color:  #555;
 }
-.user-like-btn ul li button{
+.user-like-btn button{
+   color: rgb(159, 159, 159);
     border: none;
-    background-color: #fff;
-    color:  #555;
+    background-color: transparent;
 }
-.user-like-btn ul li a{
-    color:  #555;
+.user-like-btn a{
+   color: rgb(159, 159, 159);
     text-decoration: none;
-}
-.user-like-btn ul li button:focus{
-    outline-color: rgb(80, 1, 80);
 }
 @media only screen and (max-width: 567px){
     .user-comment-section{
-        padding: 0px 5px;
+        background-color: #ccc;
     }
-    .user-comments .user-comment-body{
-        width: 85%;
+    .user-comments{
+        padding: 5px;
     }
-    .user-comments .user-comment-body p{
-        font-size: 115%;
-    }  
-}
-@media only screen and (max-width: 398px){
-    .user-comments .user-comment-body{
-        width: 85%;
-    }
-}
-@media only screen and (max-width: 350px){
-    .user-comments .user-comment-body{
-        width: 82%;
+    .user-comment-section{
+        padding: 0px;
     }
 }
