@@ -685,7 +685,6 @@ p.answer-decription{
     display: flex;
     position: absolute;
     padding-top: 10px;
-    border: 1px solid #ccc;
     /* transform: translate(-200px); */
 }
 .category-image{
@@ -744,4 +743,15 @@ p.answer-decription{
  }
  .direction .next:hover, .direction .prev:hover{
     opacity: 0.8;
+ }
+ @media only screen and (max-width: 767px){
+    .category-container{
+        padding: 0px;
+    }
+    .catgegory-slide-container{
+        border-radius: 0px;
+        border: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
  }
