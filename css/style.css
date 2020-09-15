@@ -393,12 +393,18 @@ a.right-side-image img{
     .main-container{
         margin-top: 0px;
     }
-}
-@media only screen and (max-width: 767px){
     #middleSideBar{
         padding: 0px;
         min-width: 100%;
     }
+}
+@media only screen and (max-width: 567px){
+    .user-question-field{
+       padding: 5px;
+    }
+    .user-question-field label{
+        padding: 0px;
+     }
 }
 /* ===================================== */
 /*            ANSWER                    */
