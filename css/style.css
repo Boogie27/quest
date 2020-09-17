@@ -1,7 +1,6 @@
 body{
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
 }
 
 html{
@@ -260,6 +259,7 @@ ul.left-bar li{
     font-weight: 400;
     border: 1px solid purple;
  }
+
  @media only screen and (max-width: 1125px){
     #leftSideBar{
         min-width: 25%;
@@ -454,6 +454,7 @@ a.right-side-image img{
 }
 p.answer-decription{
     color: #333;
+    margin: 0px;
     padding: 8px 0px;
     font-weight: 300;
     font-size: 115%;
@@ -474,15 +475,17 @@ p.answer-decription{
 .answer-action ul{
     overflow: hidden;
     position: relative;
+    padding: 5px 0px;
+    border-bottom: 1px solid #ccc;
 }
 .answer-action ul li{
     display: inline-block;
     margin: 0px 10px;
-    color: rgb(80, 1, 80);
+    color: rgb(114, 114, 114);
 }
 .answer-action ul li i{
-    color:rgb(80, 1, 80);
     font-size: 110%;
+    color: rgb(114, 114, 114);
 }
 .answer-action ul li.options{
     float: right;
@@ -505,8 +508,11 @@ p.answer-decription{
        background-color: rgb(171, 171, 171);
    }
    .answers{
-       margin: 10px 0px 20px 0px;
+       border: none;
+       border-radius: 0px;
        overflow: hidden;
+       margin: 10px 0px 20px 0px;
+       border-top: 1px solid #ccc;
    }
 }
 @media only screen and (max-width: 567px){
@@ -549,7 +555,7 @@ p.answer-decription{
 }
 /* -------------- client comment------------ */
 .client-comment{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .client-image img{
     width: 40px;
@@ -616,7 +622,7 @@ p.answer-decription{
     color: rgb(159, 159, 159);
 }
 .user-comment-body p{
-    font-size: 105%;
+    font-size: 100%;
     color: #333;
     font-weight: 300;
     margin: 0px;
@@ -630,16 +636,16 @@ p.answer-decription{
 .user-like-btn li{
     width: 20%;
     font-size: 90%;
-    color: rgb(159, 159, 159);
+    color: rgb(114, 114, 114);
     display: inline-block;
 }
 .user-like-btn button{
-   color: rgb(159, 159, 159);
+    color: rgb(114, 114, 114);
     border: none;
     background-color: transparent;
 }
 .user-like-btn a{
-   color: rgb(159, 159, 159);
+    color: rgb(114, 114, 114);
     text-decoration: none;
 }
 @media only screen and (max-width: 567px){
@@ -708,10 +714,6 @@ ul li.topic-name h3{
 ul li.topic-name a{
     color: rgb(1, 159, 203);
     font-size: 90%;
-}
-.category-header img{
-    width: 70px;
-    height: 70px;
 }
 .category-header h4{
     font-size: 100%;
@@ -818,18 +820,26 @@ ul li.topic-name a{
     margin-top: 30px;
     text-align: center;
 }
+.news-container label{
+    position: relative;
+    bottom: 2px;
+ }
 .news-container img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 .news-container input{
     width: 70%;
     padding: 5px 10px;
     border-radius: 20px;
-    border: 1px solid rgb(140, 140, 140);
+    border: 1px solid rgb(186, 186, 186);
 }
 .news-container input:focus{
     outline: none;
+}
+.news-container input::placeholder{
+    color: rgb(133, 133, 133);
 }
 .news-container button{
     border: none;
@@ -849,9 +859,53 @@ ul li.topic-name a{
         height: 40px;
     }
     .news-container input{
-        width: 60%;
+        width: 65%;
     }
-    .news-container input::placeholder{
-        font-size: 60%;
+ }
+ /* ---------------------news comment ------------------- */
+ .news-comment-container{
+     margin-top: 20px;
+ }
+ .user-news-comment{
+     margin: 20px 0px;
+ }
+ .news-comment-container img{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+ .news-comment-body{
+    padding: 5px;
+    margin: 0px;
+    border-radius: 5px;
+    background-color: rgba(239, 239, 239, 0.598);
+ }
+ .news-comment-body h3{
+     font-size: 100%;
+     margin: 0px 0px 10px 0px;
+ }
+ p.news-user-comment{
+    font-size: 100%;
+    font-weight: 300;
+    color: #333;
+    margin: 0px;
+ }
+ @media only screen and (max-width: 567px){
+    .news-comment-container{
+        padding: 0px 10px;
     }
+    .user-news-comment .col-1{
+       margin-right: 23px;
+    }
+    .user-news-comment .col-11{
+        max-width: 85%;
+    }
+ }
+ @media only screen and (max-width: 398px){
+    .user-news-comment .col-1{
+        margin-right: 25px;
+     }
+     .user-news-comment .col-11{
+         max-width: 80%;
+     }
  }
