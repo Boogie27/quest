@@ -923,8 +923,20 @@ ul.left-bar li.news-li:hover a.news-link{
      font-family: curier;
      font-weight: 600;
  }
-
- @media only screen and (max-width: 567px){
+ #middleSideBar{
+     margin-bottom: 50px;
+ }
+#middleSideBar .news-feeds h3{
+    text-align: left;
+}@media only screen and (max-width: 767px){
+    #newsMiddle .row{
+        padding: 10px;
+    }
+}
+ @media only screen and (max-width: 574px){
+    #middleSideBar .news-feeds img{
+        height: 300px;
+    }
     .news-comment-container{
         padding: 0px 10px;
     }
@@ -939,6 +951,9 @@ ul.left-bar li.news-li:hover a.news-link{
     }
  }
  @media only screen and (max-width: 398px){
+    #middleSideBar .news-feeds img{
+        height: 225px;
+    }
     .user-news-comment .col-1{
         margin-right: 25px;
      }
