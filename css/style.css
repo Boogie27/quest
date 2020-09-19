@@ -261,9 +261,6 @@ ul.left-bar li{
  }
 
  @media only screen and (max-width: 1125px){
-    #leftSideBar{
-        min-width: 25%;
-    }
     .right-side .right-info{
         padding: 0px 10px;
     }
@@ -271,13 +268,11 @@ ul.left-bar li{
 @media only screen and (max-width: 992px){
     #leftSideBar{
        position: absolute;
-       width: 250px;
        left: 0px;
        z-index: 100;
        display: none;
        /* turn complete this later width js */
     }
-
 }
  /* ====================================== */
 /*       RIGHT SIDE BAR                  */
@@ -327,11 +322,13 @@ a.right-side-image img{
     font-weight: 300;
 }
 @media only screen and (max-width: 1125px){
-    #rightSideBar{
-        display: none;
-    }
     .right-side .right-info{
         padding: 0px 10px;
+    }
+}
+@media only screen and (max-width: 992px){
+    #rightSideBar{
+        display: none;
     }
 }
 /* ===================================== */
@@ -377,7 +374,7 @@ a.right-side-image img{
 }
 @media only screen and (max-width: 1125px){
     #middleSideBar{
-        min-width: 74%;
+        /* min-width: 74%; */
     }
 }
 @media only screen and (max-width: 992px){
@@ -863,6 +860,19 @@ ul li.topic-name a{
     }
  }
  /* ---------------------news comment ------------------- */
+  /* new left side bar */
+ul.left-bar li.news-li ul.drop-down li a{
+    padding: 7px 0px 7px 20px;
+}
+ul.drop-down{
+    display: none;
+}
+ul.left-bar li.news-li:hover ul.drop-down{
+   display: block;
+}
+ul.left-bar li.news-li:hover a.news-link{
+    color: purple;
+ }
  .news-comment-container{
      margin-top: 20px;
  }
@@ -878,7 +888,7 @@ ul li.topic-name a{
     padding: 5px;
     margin: 0px;
     border-radius: 5px;
-    background-color: rgba(239, 239, 239, 0.598);
+    background-color: rgba(230, 230, 230, 0.598);
  }
  .news-comment-body h3{
      font-size: 100%;
@@ -890,6 +900,30 @@ ul li.topic-name a{
     color: #333;
     margin: 0px;
  }
+ .news-feeds{
+     border-bottom: 1px solid #ccc;
+     margin-bottom: 20px;
+ }
+ .news-feeds a{
+     color: #333;
+     text-decoration: none;
+ }
+ .news-feeds img{
+     width: 100%;
+     height: 150px;
+     background-color: #555;
+     transition: all 0.2s ease;
+ }
+ .news-feeds img:hover{
+     transform: scale(1.03);
+ }
+ .news-feeds h3{
+     font-size: 110%;
+     text-align: center;
+     font-family: curier;
+     font-weight: 600;
+ }
+
  @media only screen and (max-width: 567px){
     .news-comment-container{
         padding: 0px 10px;
@@ -900,6 +934,9 @@ ul li.topic-name a{
     .user-news-comment .col-11{
         max-width: 85%;
     }
+    .news-feeds img{
+        height: 225px;
+    }
  }
  @media only screen and (max-width: 398px){
     .user-news-comment .col-1{
@@ -907,5 +944,8 @@ ul li.topic-name a{
      }
      .user-news-comment .col-11{
          max-width: 80%;
+     }
+     .news-comment-body{
+        background-color: rgba(208, 208, 208, 0.598);
      }
  }
