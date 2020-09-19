@@ -488,12 +488,6 @@ p.answer-decription{
     float: right;
     margin-top: 4px;
 }
-.answer-action ul li.comment a{
-    color: #333;
-    font-size: 90%;
-    margin-right: 5px;
-    text-decoration: none;
-}
 @media only screen and (max-width: 992px){
     p.answer-decription{
         font-size: 120%;
@@ -553,6 +547,7 @@ p.answer-decription{
 /* -------------- client comment------------ */
 .client-comment{
     margin-top: 20px;
+    overflow: hidden;
 }
 .client-image img{
     width: 40px;
@@ -627,8 +622,6 @@ p.answer-decription{
 .user-like-btn ul{
     width: 100%;
     padding: 4px;
-    text-align: center;
-    border: 1px solid #ccc;
 }
 .user-like-btn li{
     width: 20%;
@@ -661,7 +654,6 @@ p.answer-decription{
     }
     .user-like-btn ul{
         border: none;
-        border-top: 1px solid #ccc;
     }
 }
 /* ======================================= */
@@ -900,43 +892,64 @@ ul.left-bar li.news-li:hover a.news-link{
     color: #333;
     margin: 0px;
  }
+ #middleSideBar{
+    margin-bottom: 50px;
+}
  .news-feeds{
-     border-bottom: 1px solid #ccc;
-     margin-bottom: 20px;
+     margin-bottom: 50px;
  }
  .news-feeds a{
      color: #333;
      text-decoration: none;
  }
- .news-feeds img{
+ .news-image{
      width: 100%;
-     height: 150px;
-     background-color: #555;
-     transition: all 0.2s ease;
+     height: 200px;
  }
+ .news-image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease;
+    background-color: rgba(230, 230, 230, 0.598);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3);
+}
  .news-feeds img:hover{
-     transform: scale(1.03);
+     transform: scale(1.01);
+     opacity: 0.9;
  }
- .news-feeds h3{
-     font-size: 110%;
-     text-align: center;
-     font-family: curier;
-     font-weight: 600;
+ .news-title{
+     margin-top: 10px;
  }
- #middleSideBar{
-     margin-bottom: 50px;
- }
+.news-title span{
+    font-size: 90%;
+    color: rgb(138, 138, 138);
+}
+.news-title h2{
+    font-size: 140%;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.news-title .read-more{
+    color:  black;
+    font-size: 90%;
+    padding: 3px 10px 5px 10px;
+    text-decoration: none;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 5px 1px rgb(133, 133, 133);
+}
 #middleSideBar .news-feeds h3{
     text-align: left;
-}@media only screen and (max-width: 767px){
+}
+@media only screen and (max-width: 767px){
     #newsMiddle .row{
         padding: 10px;
     }
+    .news-feeds img:hover{
+        transform: none;
+    }
 }
  @media only screen and (max-width: 574px){
-    #middleSideBar .news-feeds img{
-        height: 300px;
-    }
     .news-comment-container{
         padding: 0px 10px;
     }
@@ -946,14 +959,17 @@ ul.left-bar li.news-li:hover a.news-link{
     .user-news-comment .col-11{
         max-width: 85%;
     }
-    .news-feeds img{
-        height: 225px;
+    #newsMiddle{
+        padding: 0px 15px;
+    }
+    #NewsRightSideBar{
+        padding: 0px 22px;
+    }
+    .news-image{
+        height: 300px;
     }
  }
  @media only screen and (max-width: 398px){
-    #middleSideBar .news-feeds img{
-        height: 225px;
-    }
     .user-news-comment .col-1{
         margin-right: 25px;
      }
@@ -963,4 +979,7 @@ ul.left-bar li.news-li:hover a.news-link{
      .news-comment-body{
         background-color: rgba(208, 208, 208, 0.598);
      }
+     .news-image{
+        height: 275px;
+    }
  }
