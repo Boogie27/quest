@@ -488,6 +488,10 @@ p.answer-decription{
     float: right;
     margin-top: 4px;
 }
+.answer-action ul li a{
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+}
 @media only screen and (max-width: 992px){
     p.answer-decription{
         font-size: 120%;
@@ -580,7 +584,7 @@ p.answer-decription{
     color:  rgb(80, 1, 80);
     padding: 7px 10px;
     text-decoration: none;
-    border: 1px solid  rgb(80, 1, 80);;
+    border: 1px solid  rgb(80, 1, 80);
 }
 @media only screen and (max-width: 567px){
     .client-comment{
@@ -941,12 +945,19 @@ ul.left-bar li.news-li:hover a.news-link{
 #middleSideBar .news-feeds h3{
     text-align: left;
 }
+#relatedNews{
+    background-color: rgba(230, 230, 230, 0.598);
+}
 @media only screen and (max-width: 767px){
     #newsMiddle .row{
         padding: 10px;
     }
     .news-feeds img:hover{
         transform: none;
+    }
+    .news-title .read-more{
+        padding: 5px 15px 7px 15px;
+        background-color: rgb(247, 247, 247);
     }
 }
  @media only screen and (max-width: 574px){
@@ -967,6 +978,13 @@ ul.left-bar li.news-li:hover a.news-link{
     }
     .news-image{
         height: 300px;
+    }
+    #relatedNews{
+        color: #fff;
+        background-color: rgb(80, 1, 80);
+    }
+    #relatedNews h3{
+        color: #fff;
     }
  }
  @media only screen and (max-width: 398px){
