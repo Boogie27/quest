@@ -17,6 +17,7 @@ ul{
     margin: 0px;
     list-style: none;
 }
+/* background-color: rgb(80, 1, 80); */
 
 /* ==================================== */
 /*        NAVIAGTION SECTION           */
@@ -372,11 +373,6 @@ a.right-side-image img{
 .user-question-field button:focus, .user-question-field textarea:focus{
     outline: none;
 }
-@media only screen and (max-width: 1125px){
-    #middleSideBar{
-        /* min-width: 74%; */
-    }
-}
 @media only screen and (max-width: 992px){
     .main-container .container{
         min-width: 100%;
@@ -463,7 +459,6 @@ p.answer-decription{
     text-align: center;
     margin: 10px 0px;
     background-color: rgb(216, 216, 216);
-    border: 1px solid #ccc;
 }
 .answer-description-image img{
     width: 100%;
@@ -509,6 +504,10 @@ p.answer-decription{
        margin: 10px 0px 20px 0px;
        border-top: 1px solid #ccc;
    }
+   .answer-description-image{
+      border-radius: 0px;
+      margin: 0px;
+}
 }
 @media only screen and (max-width: 567px){
     .answer-container{
@@ -672,29 +671,30 @@ p.answer-decription{
 }
 .catgeory-banner ul{
     width: 100%;
-    position: relative;
 }
-ul li.topic-background-image{
-    width: 100%;
+.category-banner-image{
     height: 250px;
+    position: relative;
+    text-align: center;
+    background-size: cover;
 }
-ul li.topic-background-image img{
-    width: 100%;
-    height: 100%;
+.category-banner-image a.follow{
+    top: 45%;
+    opacity: 0.8;
+    position: relative;
+    text-decoration: none;
+    background-color: #333;
+    color: rgb(127, 216, 240);
+    padding: 5px 30px 7px 30px;
+    transition: all 0.5s ease;
+    border: 1px solid rgb(127, 216, 240);
 }
-ul li.topic-front-image{
-    position: absolute;
-    margin-left: 20px;
-    bottom: 50px;
-}
-ul li.topic-front-image img{
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    border: 2px solid #ccc;
+.category-banner-image a.follow:hover{
+    color: #fff;
+    background-color: rgb(1, 159, 203);
 }
 ul li.topic-name{
-    margin-top: 60px;
+    margin-top: 40px;
     width: 100%;  
     text-align: center; 
 }
@@ -797,6 +797,9 @@ ul li.topic-name a{
     }
     .category-header{
         padding-left: 20px;
+    }
+    .direction{
+        display: none;
     }
  }
  @media only screen and (max-width: 567px){
@@ -939,7 +942,7 @@ ul.left-bar li.news-li:hover a.news-link{
     font-size: 90%;
     padding: 3px 10px 5px 10px;
     text-decoration: none;
-    background-color: rgb(247, 247, 247);
+    background-color: #fff;
     box-shadow: 2px 2px 5px 1px rgb(133, 133, 133);
 }
 #middleSideBar .news-feeds h3{
@@ -948,7 +951,47 @@ ul.left-bar li.news-li:hover a.news-link{
 #relatedNews{
     background-color: rgba(230, 230, 230, 0.598);
 }
+#newsCommentForm{
+    margin-bottom: 150px;
+    background-color: #fff;
+}
+#newsCommentForm .comment-form-header h2{
+    width: 100%;
+    color: #333;
+    font-size: 110%;
+    text-align: center;
+    margin: 40px 0px;
+}
+#newsCommentForm .comment-form-header h2::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #555;
+}
+#newsCommentForm label{
+    color: #333;
+    font-weight: 500;
+}
+#newsCommentForm input, #newsCommentForm textarea{
+    border: none;
+    box-shadow: none;
+    box-shadow: 2px 1px 6px 0px #ccc;
+}
+#newsCommentForm input:focus, #newsCommentForm textarea:focus, #newsCommentForm button:focus{
+    box-shadow: 2px 1px 6px 0px #ccc;
+}
+#newsCommentForm button{
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(80, 1, 80);
+}
 @media only screen and (max-width: 767px){
+    .news-middle-bar .answer-container{
+        background-color: #fff; 
+    }
     #newsMiddle .row{
         padding: 10px;
     }
@@ -956,8 +999,11 @@ ul.left-bar li.news-li:hover a.news-link{
         transform: none;
     }
     .news-title .read-more{
-        padding: 5px 15px 7px 15px;
-        background-color: rgb(247, 247, 247);
+        padding: 7px 20px 9px 20px;
+    }
+    #newsCommentForm{
+        padding: 0px 20px;
+        border-top: 1px solid #ccc;
     }
 }
  @media only screen and (max-width: 574px){
@@ -974,6 +1020,9 @@ ul.left-bar li.news-li:hover a.news-link{
         padding: 0px 15px;
     }
     #NewsRightSideBar{
+        padding: 0px;
+    }
+    #NewsRightSideBar .related-news{
         padding: 0px 22px;
     }
     .news-image{
@@ -981,6 +1030,8 @@ ul.left-bar li.news-li:hover a.news-link{
     }
     #relatedNews{
         color: #fff;
+        border: none;
+        border-radius: 0px;
         background-color: rgb(80, 1, 80);
     }
     #relatedNews h3{
@@ -1000,4 +1051,53 @@ ul.left-bar li.news-li:hover a.news-link{
      .news-image{
         height: 275px;
     }
+ }
+ /* ============================================== */
+ /*            ADMIN INFO SECTION                 */
+ /* ============================================ */
+ .admin-info{
+    margin: 100px 0px;
+ }
+ .admin-info-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+ }
+ .admin-info-body{
+    margin: 10px 0px;
+ }
+ .admin-info-body p{
+    width: 60%;
+    font-weight: 300;
+    margin-left: 20%;
+ }
+ ul.admin-social-link li{
+    display: inline-block;
+    margin: 0px 3px;
+ }
+ ul.admin-social-link img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+ 
+ @media only screen and (max-width: 992px){
+    .admin-info{
+         margin-top: 200px;
+    }
+    .admin-info-body p{
+        width: 80%;
+        margin-left: 10%;
+     }
+ }
+ @media only screen and (max-width: 767px){
+    .admin-info-image img{
+        width: 100px;
+        height: 100px;
+     }
+    .admin-info-body p{
+        width: 100%;
+        margin-left: 0%;
+     }
  }

@@ -124,7 +124,7 @@
                     <!-- side navigation end -->
                 </div>
                 <div class="col-lg-7" id="middleSideBar">
-                    <div class="middle-bar">
+                    <div class="middle-bar news-middle-bar">
                         <!-- answers section start -->
                         <div class="answer-container">
                              <!-- answers start -->
@@ -163,21 +163,8 @@
                                                   <li><i class="far fa-thumbs-down"></i><span>20</span></li>
                                                   <li><i class="far fa-thumbs-up"></i><span>10k</span></li>
                                               </ul>
+                                              <br>
                                            </div>
-                                          <!-- news comment section start -->
-                                          <div class="news-container">
-                                            <form action="" method="POST">
-                                                <div class="form-group">
-                                                    <label for="news-comment">
-                                                        <img src="image/profile-image/1.png" alt="">
-                                                    </label>
-                                                    <input type="text" name="news-comment" class="news-comment" placeholder="Write a comment">
-                                                    <button type="button" name="newBtn">Post</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                      <!-- news comment section end -->
-
                                         <!-- news comment start -->
                                          <div class="news-comment-container">
                                              <!-- user news comment start -->
@@ -244,9 +231,36 @@
                                </div>
                             </div>
                             <!-- answers end -->
+                            <!-- news commentform start -->
+                            <div class="new-comment-form">
+                                <form action="" method="POST" id="newsCommentForm">
+                                    <div class="comment-form-header"><h2>Make a Comment</h2></div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">Name:</label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="comment">Comment:</label>
+                                                <textarea name="comment" id="comment" class="form-control" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" name="" class="btn btn-info float-right">Comment</button>
+                                </form>
+                            </div>
+                            <!-- news commentform end -->
                         </div>
                          <!-- answers section end -->
-
                     </div>
                 </div>
                 <div class="col-lg-3" id="NewsRightSideBar">
@@ -262,8 +276,7 @@
                                         </div>
                                         <div class="news-title">
                                             <span class="news-date">September 10, 2020 - <b style="color: rgb(80, 1, 80); font-weight: 400;">Entertainment</b></span>
-                                            <a href="news_topic.html"><h2>Things to note about climate change</h2></a>
-                                            <a href="news_topic.html" class="read-more">Read More</a>
+                                            <a href="news_topic.html"><h2>News header goes here</h2></a>
                                         </div>
                                     </div>
                                     <!-- related news start -->
@@ -276,8 +289,7 @@
                                         </div>
                                         <div class="news-title">
                                             <span class="news-date">September 10, 2020 - <b style="color: rgb(80, 1, 80); font-weight: 400;">Entertainment</b></span>
-                                            <a href="news_topic.html"><h2>Things to note about climate change</h2></a>
-                                            <a href="news_topic.html" class="read-more">Read More</a>
+                                            <a href="news_topic.html"><h2>News header goes here</h2></a>
                                         </div>
                                     </div>
                                     <!-- related news start -->
@@ -290,8 +302,7 @@
                                         </div>
                                         <div class="news-title">
                                             <span class="news-date">September 10, 2020 - <b style="color: rgb(80, 1, 80); font-weight: 400;">Entertainment</b></span>
-                                            <a href="news_topic.html"><h2>Things to note about climate change</h2></a>
-                                            <a href="news_topic.html" class="read-more">Read More</a>
+                                            <a href="news_topic.html"><h2>News header goes here</h2></a>
                                         </div>
                                     </div>
                                     <!-- related news start -->
@@ -304,8 +315,7 @@
                                         </div>
                                         <div class="news-title">
                                             <span class="news-date">September 10, 2020 - <b style="color: rgb(80, 1, 80); font-weight: 400;">Entertainment</b></span>
-                                            <a href="news_topic.html"><h2>Things to note about climate change</h2></a>
-                                            <a href="news_topic.html" class="read-more">Read More</a>
+                                            <a href="news_topic.html"><h2>News header goes here</h2></a>
                                         </div>
                                     </div>
                                     <!-- related news start -->
@@ -318,8 +328,7 @@
                                         </div>
                                         <div class="news-title">
                                             <span class="news-date">September 10, 2020 - <b style="color: rgb(80, 1, 80); font-weight: 400;">Entertainment</b></span>
-                                            <a href="news_topic.html"><h2>Things to note about climate change</h2></a>
-                                            <a href="news_topic.html" class="read-more">Read More</a>
+                                            <a href="news_topic.html"><h2>News header goes here</h2></a>
                                         </div>
                                     </div>
                                     <!-- related news start -->
@@ -333,6 +342,30 @@
         </div>
     </section>
 
+
+
+    <!--  ADMIN INFO SECTION   -->
+    <section>
+        <div class="container">
+            <div class="admin-info text-center">
+                 <div class="admin-info-image">
+                    <img src="image/profile-image/1.png" alt="">
+                 </div>
+                 <div class="admin-info-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat rerum expedita quibusdam molestias 
+                        cupiditate fugiat quae ab eaque veritatis iure facere quasi labore, ea, minus natus numquam. A rem perferendis velit, 
+                        consequuntur ab error voluptatum omnis et aliquam culpa alias, ducimus beatae sit reiciendis aspernatur ratione sed, nisi 
+                    </p>
+                    <ul class="admin-social-link">
+                        <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="icons/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="icons/linkedin.png" alt="linkedin"></a></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/script.js"></script>
