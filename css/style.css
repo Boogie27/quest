@@ -1101,3 +1101,133 @@ ul.left-bar li.news-li:hover a.news-link{
         margin-left: 0%;
      }
  }
+
+ /*--------------- unanswers section start --------------*/
+ .unanswered-container{
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+ }
+.unanswered-header h3{
+    margin: 0px;
+    color: #333;
+    font-size: 150%;
+}
+ul.unanswered-btns {
+    width: 100%;
+}
+ul.unanswered-btns li{
+    color: #ccc;
+    margin-right: 20px;
+    display: inline-block;
+}
+ul.unanswered-btns li a{
+    font-size: 90%;
+    margin-right: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(118, 118, 118, 0.941);
+}
+.unanswered-user ul{
+    width: 100%;
+    margin: 20px 0px;
+}
+.unanswered-user a{
+    text-decoration: none;
+}
+.unanswered-user ul li{
+    display: inline-block;
+}
+.unanswered-user ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.unanswered-user ul li a{
+    color: #333;
+    font-weight: 600;
+}
+.unanswered-user ul li.edit-user a{ 
+    color: #555;
+    font-weight: 400;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.unanswered-user form label{ 
+    font-weight: 600;
+}
+.unanswered-user form textarea, .unanswered-user form textarea:focus{ 
+    border: none;
+    box-shadow: 0px 0px 4px 0px rgb(165, 165, 165);
+}
+.unanswered-user form button{ 
+    color: #333;
+    font-weight: 400;
+    border-radius: 0px;
+    margin: 20px 0px 0px 15px;
+    box-shadow: 0px 0px 4px 0px rgb(89, 89, 89);
+}
+.unanswered-user form button.btn-submit{ 
+    color: #fff;
+    box-shadow: none;
+    background-color: rgb(80, 1, 80);
+}
+.unanswered-user form button:focus{ 
+    box-shadow: 0px 0px 4px 0px rgb(89, 89, 89);
+}
+@media only screen and (max-width: 767px){
+    .unanswered-container{
+        padding: 0px 10px;
+    }
+}
+@media only screen and (max-width: 398px){
+    .unanswered-header h3{
+        font-size: 130%;
+    }
+}
+/* ---------------- answered question ---------------- */
+.answered{
+    padding: 10px;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgb(181, 181, 181);
+}
+.answered-info {
+    font-size: 90%;
+    color: rgb(111, 111, 111);
+}
+.answered-info h4{
+    margin: 0px;
+    font-size: 90%;
+    font-weight: 400;
+    color: rgb(111, 111, 111);
+}
+.answered .answered-header a{
+    color: #333;
+}
+.answered .answered-header h3{
+    font-size: 110%;
+}
+.answered-info h4 span{
+    color: #333;
+    font-weight: 600;
+}
+.answered p{
+    font-weight: 300;
+    margin: 0px;
+}
+@media only screen and (max-width: 767px){
+    .answered-question-container{
+       background-color: #ccc;
+       border-top: 1px solid rgba(204, 204, 204, 0.859);
+    }
+    .answered{
+        box-shadow: none;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.859);
+    }
+}
+@media only screen and (max-width: 398px){
+   .answered-question-container{
+       padding: 0px 10px;
+   }
+}
