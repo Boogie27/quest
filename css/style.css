@@ -911,14 +911,14 @@ ul.left-bar li.news-li:hover a.news-link{
  }
  .news-image{
      width: 100%;
-     height: 200px;
+     height: 225px;
  }
  .news-image img{
     width: 100%;
     height: 100%;
     transition: all 0.1s ease;
     background-color: rgba(230, 230, 230, 0.598);
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.592);
 }
  .news-feeds img:hover{
      transform: scale(1.01);
@@ -943,7 +943,7 @@ ul.left-bar li.news-li:hover a.news-link{
     padding: 3px 10px 5px 10px;
     text-decoration: none;
     background-color: #fff;
-    box-shadow: 2px 2px 5px 1px rgb(133, 133, 133);
+    box-shadow: 1px 2px 3px 1px rgb(99, 99, 99);
 }
 #middleSideBar .news-feeds h3{
     text-align: left;
@@ -978,7 +978,7 @@ ul.left-bar li.news-li:hover a.news-link{
 #newsCommentForm input, #newsCommentForm textarea{
     border: none;
     box-shadow: none;
-    box-shadow: 2px 1px 6px 0px #ccc;
+    box-shadow: 0px 0px 5px 2px #ccc;
 }
 #newsCommentForm input:focus, #newsCommentForm textarea:focus, #newsCommentForm button:focus{
     box-shadow: 2px 1px 6px 0px #ccc;
