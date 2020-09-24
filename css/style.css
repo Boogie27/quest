@@ -39,11 +39,16 @@ ul{
     color: #fff;
 }
 .logo h3 i.fa-bars{
-    right: 5px;
-    top: 3px;
     display: none;
-    position: absolute;
-    margin: 0px 0px 0px 30px;
+}
+@media only screen and (max-width: 992px){
+    .logo h3 i.fa-bars{
+        right: 0px;
+        top: 5px;
+        display: block;
+        position: absolute;
+        margin: 0px 0px 0px 30px;
+    }
 }
 @media only screen and (max-width: 867px){
     .navigation{
@@ -1208,13 +1213,18 @@ ul.unanswered-btns li a{
 }
 .answered-info {
     font-size: 90%;
-    color: rgb(111, 111, 111);
+    color: rgba(111, 111, 111, 0.578);
 }
 .answered-info h4{
     margin: 0px;
     font-size: 90%;
     font-weight: 400;
     color: rgb(111, 111, 111);
+}
+.answered-info a{
+    font-size: 90%;
+    text-decoration: none;
+    color: rgba(111, 111, 111, 0.578);
 }
 .answered .answered-header a{
     color: #333;
