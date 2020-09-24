@@ -376,11 +376,10 @@ a.right-side-image img{
 @media only screen and (max-width: 467px){
     .mobile-right-side-bar .right-image{
         min-width: 20%;
-    }
-}
-@media only screen and (max-width: 398px){
-    .mobile-right-side-bar .right-image{
         height: 70px;
+    }
+    .mobile-right-side-bar .right-info ul{
+        padding-top: 20px;
     }
 }
 /* ===================================== */
