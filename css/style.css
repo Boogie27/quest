@@ -334,6 +334,7 @@ ul.left-bar li{
     }
     .left-side-bar{
         width: 240px;
+        height: 100vh;
         right: -5px;
         border: none;
         position: relative;
