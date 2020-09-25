@@ -178,7 +178,7 @@ img.profile-image{
 /*           SUB NAVIGATION             */
 /* =================================== */
 .sub-navigation{
-    padding: 10px;
+    padding: 10px 0px;
 }
 .sub-nav-frame{
     width: 100%;
@@ -186,7 +186,7 @@ img.profile-image{
 }
 .sub-nav-frame .sub-nav-item{
     display: inline-block;
-    width: 200px;
+    margin: 0px 50px;
     text-align: center;
 }
 .sub-nav-item i{
@@ -211,12 +211,30 @@ img.profile-image{
     color: #fff;
  }
 @media only screen and (max-width: 992px){
+     #sub-navigation{
+        margin: 10px 0px 30px 0px;
+    }
+    #sub-navigation .container{
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+    }
+    .sub-nav-frame .sub-nav-item{
+        margin: 0px 30px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .sub-nav-frame .sub-nav-item{
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 567px){
     .sub-navigation{
         width: 100%;
         height: 50px;
-        position: relative;
         overflow: hidden;
         margin: 10px 0px;
+        padding: 10px;
     }
     .sub-nav-frame{
         width: 100%;
@@ -225,11 +243,13 @@ img.profile-image{
     }
     .sub-nav-frame .sub-nav-item{
         float: none;
-        min-width: 170px;
+        margin: 0px;
+        display: table;
+        position: relative;
+        width: 160px;
         text-align: left;
     }
 }
-
 /* ====================================== */
 /*             main container            */
 /* ==================================== */
@@ -257,6 +277,12 @@ ul.left-bar li{
     color: #555;
     font-weight: 600;
  }
+ ul.left-bar li a.add-category i{
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgb(171, 171, 171);
+    padding: 6px 5px 5px 5px;
+ }
  ul.left-bar li{
     width: 100%;
  }
@@ -273,7 +299,6 @@ ul.left-bar li{
     font-weight: 400;
     border: 1px solid purple;
  }
-
  @media only screen and (max-width: 1125px){
     .right-side .right-info{
         padding: 0px 10px;
@@ -508,6 +533,14 @@ p.answer-decription{
     font-weight: 300;
     font-size: 115%;
     border-bottom: 1px solid #ccc;
+}
+p.answer-decription .decription-close{
+    display: none;
+}
+p.answer-decription a{
+    text-decoration: none;
+    color: rgb(145, 4, 145);
+    border-bottom: 1px solid rgb(145, 4, 145);
 }
 .answer-description-image{
     width: 100%;
