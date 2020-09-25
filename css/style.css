@@ -317,7 +317,7 @@ ul.left-bar li{
 }
 @media only screen and (max-width: 992px){
     #leftSideBar{
-        top: 0px;
+       top: 0px;
        z-index: 100;
        position: fixed; 
        /* turn complete this later width js */
@@ -327,6 +327,7 @@ ul.left-bar li{
         left: 5px;
         z-index: 100;
         width: 250px;
+        height: 100vh;
         position: fixed;
         overflow: scroll; 
         display: block;
