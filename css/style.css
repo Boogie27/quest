@@ -315,7 +315,7 @@ ul.left-bar li{
     border: 1px solid purple;
  }
  .mobile-side-bar-cancle{
-    padding: 10px;
+    padding: 15px 20px 15px 0px;
     display: none;
     margin-bottom: 20px;
  }
@@ -869,11 +869,11 @@ ul li.topic-name a{
     height: 288px;
     display: flex;
     position: absolute;
-    padding-top: 10px;
+    padding: 10px 0px 0px 5px;
     /* transform: translate(-200px); */
 }
 .category-image{
-    padding: 0px 5px;
+    padding-right: 10px;
 }
 .category-image ul, .category-image ul li.cat-image{
     width: 200px;
@@ -1300,8 +1300,7 @@ ul.unanswered-btns li a{
     font-weight: 600;
 }
 .unanswered-user form textarea, .unanswered-user form textarea:focus, .unanswered-user form select{ 
-    border: none;
-    box-shadow: 0px 0px 4px 0px rgb(165, 165, 165);
+    border: 1px solid #ccc;
 }
 .unanswered-user form button{ 
     color: #333;
@@ -1309,7 +1308,7 @@ ul.unanswered-btns li a{
     border-radius: 0px;
     margin-left: 10px;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 4px 0px rgb(89, 89, 89);
+    border: 1px solid  rgb(80, 1, 80);
 }
 .unanswered-user form button.btn-submit{ 
     color: #fff;
@@ -1328,6 +1327,9 @@ ul.unanswered-btns li a{
     }
 }
 @media only screen and (max-width: 398px){
+    .unanswered-user form .col-12{
+        padding: 0px;
+    }
     .unanswered-header h3{
         font-size: 130%;
     }
@@ -1390,4 +1392,31 @@ p.answered-body a{
    .answered p{
     font-size: 90%;
    }
+}
+/* =========================================== */
+/*          BLOG FOOTER                      */
+/* ======================================= */
+.blog-footer{
+    margin-top: 50px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: rgb(41, 1, 41);
+}
+.blog-footer ul.footer-links li a{
+   color: #fff;
+   font-weight: 300;
+   text-decoration: none;
+}
+.blog-footer ul.footer-links li a:hover{
+    color: #ccc;
+}
+.blog-footer ul.footer-icon-link li{
+    margin: 10px 5px;
+    display: inline-block;
+}
+.blog-footer ul.footer-icon-link li a{
+    color: #fff;
+}
+.blog-footer ul.footer-icon-link li i{
+    font-size: 120%;
 }

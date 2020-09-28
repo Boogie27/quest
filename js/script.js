@@ -7,7 +7,6 @@ function initalization(){
     $(".light-skin").hide();
     $("#leftSideBar").hide(100);
 }
-initalization()
 //==========================================
 //      SEARCH BOX OPEN AND CLOSE
 // =========================================
@@ -22,7 +21,7 @@ var searchBoxOpenBtn = $("#searchBoxOpenBtn");
 var leftSideNavBtn = $("#leftSideNavBtn");
     $(leftSideNavBtn).click(function(){
     $(".light-skin").toggle();
-    $("#leftSideBar").show(150);
+    $("#leftSideBar").show(100);
 });
 
 //============================================
@@ -40,6 +39,90 @@ var lightSkin = $(".light-skin");
     $(lightSkin).click(function(){
         initalization();
 });
+
+//============================================
+//      DISCRIPTION OPEN 
+// ===========================================
+var descriptionOpen = $(".answer-decription a");
+    $(descriptionOpen).click(function(e){
+        e.preventDefault();
+        $(this).parent().find(".decription-close").show();
+        $(this).hide();
+});
+
+//============================================
+//      SWIPPER FUNCTION
+// ===========================================
+
+class Swipper{
+    
+    constructor (swipper){
+        var action = this;
+        this.counter = 0;
+        this.frameWidth = 0;
+        this.containerFrame = 0;
+        this.childFrameWidth = 0;
+
+        this.swipperContainer = swipper;
+        this.frame = $(this.swipperContainer).find(".swipper-frame");
+        this.prev = $(this.swipperContainer).find(".direction .prev");
+        this.next = $(this.swipperContainer).find(".direction .next");
+        
+        this.getFrameValues();
+
+        // next button 
+        this.next.on("click", function(){
+            action.nextBtn()
+        });
+
+        // prev button 
+        this.prev.on("click", function(){
+            action.prevBtn()
+        });
+    }
+
+    // get all the values of the swipper container and swipper frame
+    getFrameValues(){
+        this.frameWidth = $(this.frame).width();
+        this.containerFrame = $(this.swipperContainer).width();
+        this.childFrameWidth = $($(this.frame).children()[0]).width() + parseInt($($(this.frame).children()[0]).css("padding-right"));
+    }
+
+    // amount of frames to move
+    frameMove(counter){
+        var values = -this.childFrameWidth * counter;
+        // if(values <= -this.containerFrame){
+        //     values = this.containerFrame - this.frameWidth;
+        // }
+        $(this.frame).css({
+            transition: "all 0.3s ease",
+            transform: "translate("+( values)+"px)"
+        }); 
+
+       
+        console.log(values)
+        // console.log([-this.childFrameWidth * counter, this.containerFrame])
+    }
+
+     // next button function 
+    nextBtn(){
+        this.counter++;
+        this.frameMove(this.counter);
+    }
+
+     // prev button function
+    prevBtn(){
+        this.counter--;
+        this.frameMove(this.counter);
+    }
+}
+
+
+
+var swipperContainer = $(".swipper-container");
+var swipper = new Swipper(swipperContainer);
+
+
 
 
 
