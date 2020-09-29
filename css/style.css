@@ -82,6 +82,22 @@ ul{
     color: #fff;
     display: inline-block;
 }
+#desktopSearchBar .search-bar input::-webkit-input-placeholder{
+   box-shadow: none;
+   color: #fff;
+}
+#desktopSearchBar .search-bar input::-moz-placeholder{
+   box-shadow: none;
+   color: #fff;
+}
+#desktopSearchBar .search-bar input:-ms-input-placeholder{
+   box-shadow: none;
+   color: #fff;
+}
+#desktopSearchBar .search-bar input::-ms-input-placeholder{
+   box-shadow: none;
+   color: #fff;
+}
 #desktopSearchBar .search-bar input:focus, #desktopSearchBar .search-bar input::placeholder{
    box-shadow: none;
    color: #fff;
@@ -245,10 +261,10 @@ img.profile-image{
         padding: 10px;
     }
     .sub-navigation{
+        margin: 0px;
         width: 100%;
         height: 50px;
         overflow: hidden;
-        margin: 0px;
         position: relative;
     }
     .sub-nav-frame{
@@ -257,11 +273,8 @@ img.profile-image{
         position: absolute;
     }
     .sub-nav-frame .sub-nav-item{
-        float: none;
         margin: 0px;
-        display: table;
-        position: relative;
-        width: 160px;
+        min-width: 160px;
         text-align: left;
     }
 }
@@ -928,6 +941,11 @@ ul li.topic-name a{
  .direction .next:hover, .direction .prev:hover{
     opacity: 0.8;
  }
+ @media only screen and (max-width: 992px){
+    .direction{
+        display: none;
+    }
+ }
  @media only screen and (max-width: 767px){
     .category-container{
         padding: 0px;
@@ -940,9 +958,6 @@ ul li.topic-name a{
     }
     .category-header{
         padding-left: 20px;
-    }
-    .direction{
-        display: none;
     }
  }
  @media only screen and (max-width: 567px){
@@ -976,6 +991,18 @@ ul li.topic-name a{
 }
 .news-container input:focus{
     outline: none;
+}
+.news-container input::-webkit-input-placeholder{
+    color: rgb(133, 133, 133);
+}
+.news-container input::-moz-placeholder{
+    color: rgb(133, 133, 133);
+}
+.news-container input:-ms-input-placeholder{
+    color: rgb(133, 133, 133);
+}
+.news-container input::-ms-input-placeholder{
+    color: rgb(133, 133, 133);
 }
 .news-container input::placeholder{
     color: rgb(133, 133, 133);
@@ -1419,4 +1446,4 @@ p.answered-body a{
 }
 .blog-footer ul.footer-icon-link li i{
     font-size: 120%;
-}
+}}
