@@ -111,8 +111,6 @@ class Swipper{
 
     // get all the values of the swipper container and swipper frame
     getFrameValues(){
-
-        // this.frameWidth = $(this.frame).width();
         this.frameWidth = $(this.frame).children().width() * $(this.frame).children().length;
         var itemPadding = parseInt($($(this.frame).children()).css("padding-right")) * $(this.frame).children().length;
 
@@ -178,7 +176,6 @@ class Swipper{
             this.inview = this.change + this.transformMatrixValue;
 
             this.mobileFrameMove(this.change + this.transformMatrixValue)
-            console.log(this.frameWidth)
         }
     }
 
