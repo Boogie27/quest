@@ -203,6 +203,7 @@ img.profile-image{
 /*           SUB NAVIGATION             */
 /* =================================== */
 .sub-navigation{
+    width: 100%;
     padding: 10px 0px;
 }
 .sub-nav-frame{
@@ -216,8 +217,8 @@ img.profile-image{
 }
 .sub-nav-item i{
     font-size: 120%;
-    color: rgb(102, 102, 102);
     margin: 0px 2px;
+    color: rgb(102, 102, 102);
 }
 .sub-nav-item a{
     color: #555;
@@ -227,10 +228,10 @@ img.profile-image{
     color: #555;
 }
 .sub-nav-item a.question{
-   background-color: rgb(80, 1, 80);
-   padding: 7px 10px;
    color: #fff;
+   padding: 7px 10px;
    text-decoration: none;
+   background-color: rgb(80, 1, 80);
 }
 .sub-nav-item a.question span, a.question i{
     color: #fff;

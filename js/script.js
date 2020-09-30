@@ -194,6 +194,7 @@ class Swipper{
 
     // mobile frame move function
     mobileFrameMove(values){
+        if($(this.frame).css("display") != "flex")return;
         $(this.frame).css({
             "transform": "translateX("+(values)+"px)"
         });
