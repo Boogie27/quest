@@ -1430,10 +1430,13 @@ p.answered-body a{
     text-align: center;
     background-color: rgb(41, 1, 41);
 }
+.blog-footer ul li{
+    color: #fff;
+}
 .blog-footer ul.footer-links li a{
-   color: #fff;
-   font-weight: 300;
-   text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
 }
 .blog-footer ul.footer-links li a:hover{
     color: #ccc;
@@ -1447,4 +1450,8 @@ p.answered-body a{
 }
 .blog-footer ul.footer-icon-link li i{
     font-size: 120%;
-}}
+}
+.blog-footer ul.alright{
+    font-size: 90%;
+    font-weight: 300;
+}
